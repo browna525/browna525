@@ -1,0 +1,154 @@
+<div class="main-content">
+  <h2><a name=""></a></h2>
+  <p>This is the  API</p>
+
+  <h2><a name="getDrawGames"></a>getDrawGames</h2>
+  <hr>
+  <p></p>
+  <p>Get information about all Draw Games.</p>
+  <h3 class="section">URL</h3>
+  <code>https://virtserver.swaggerhub.com/browna525/NumbersSearch/1.0.0/draw-games</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="inline_response_200"><a href="">inline_response_200</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">fields</span>
+      <span class="param-type"></span>
+      
+      <p class="param-description">Return only certain model properties keyed by model type and specified by a comma-separated list of property names.</p>
+	  </li>
+  </ul>
+  <h2><a name="getDrawGamesDrawGameId"></a>getDrawGamesDrawGameId</h2>
+  <hr>
+  <p></p>
+  <p>Retrieve the information of the Draw Game with the matching ID.</p>
+  <h3 class="section">URL</h3>
+  <code>https://virtserver.swaggerhub.com/browna525/NumbersSearch/1.0.0/draw-games/{drawGameId}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="inline_response_200_1"><a href="">inline_response_200_1</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">drawGameId</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The draw game ID (e.g. \&quot;powerball\&quot;).</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">fields</span>
+      <span class="param-type"></span>
+      
+      <p class="param-description">Return only certain model properties keyed by model type and specified by a comma-separated list of property names.</p>
+	  </li>
+  </ul>
+  <h2><a name="getGameResults"></a>getGameResults</h2>
+  <hr>
+  <p></p>
+  <p>With no query params, list the most recent game results for all Draw Games. Otherwise restrict to date, date range, game, and/or winning numbers. Returns 400 error if provided query params are invalid.</p>
+  <h3 class="section">URL</h3>
+  <code>https://virtserver.swaggerhub.com/browna525/NumbersSearch/1.0.0/draw-results</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="inline_response_200_2"><a href="">inline_response_200_2</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">date</span>
+      <span class="param-type">date</span>
+      
+      <p class="param-description">Search results by date.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">dateFrom</span>
+      <span class="param-type">date</span>
+      
+      <p class="param-description">Search results by date range (from).</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">dateTo</span>
+      <span class="param-type">date</span>
+      
+      <p class="param-description">Search results by date range (to).</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">drawGameId</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Restrict to a single game with draw game ID (e.g. \&quot;powerball\&quot;).</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">numbers</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Ordered comma separated list of numbers to search.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">page</span>
+      <span class="param-type"></span>
+      
+      <p class="param-description">Object of pagination related query params, depending upon the server pagination strategy.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">fields</span>
+      <span class="param-type"></span>
+      
+      <p class="param-description">Return only certain model properties keyed by model type and specified by a comma-separated list of property names.</p>
+	  </li>
+  </ul>
+</div>

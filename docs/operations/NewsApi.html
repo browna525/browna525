@@ -1,0 +1,119 @@
+<div class="main-content">
+  <h2><a name=""></a></h2>
+  <p>This is the  API</p>
+
+  <h2><a name="getNews"></a>getNews</h2>
+  <hr>
+  <p></p>
+  <p>Get a list of News articles ordered by date descending. See note on News model about possibly not needing News endpoints.</p>
+  <h3 class="section">URL</h3>
+  <code>https://virtserver.swaggerhub.com/browna525/NumbersSearch/1.0.0/news</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="inline_response_200_6"><a href="">inline_response_200_6</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">category</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Filter news articles by category.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">keyword</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Search news articles by keyword.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">year</span>
+      <span class="param-type">BigDecimal</span>
+      
+      <p class="param-description">Search news articles by year.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">month</span>
+      <span class="param-type">BigDecimal</span>
+      
+      <p class="param-description">Search news articles by month.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">page</span>
+      <span class="param-type"></span>
+      
+      <p class="param-description">Object of pagination related query params, depending upon the server pagination strategy.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">fields</span>
+      <span class="param-type"></span>
+      
+      <p class="param-description">Return only certain model properties keyed by model type and specified by a comma-separated list of property names.</p>
+	  </li>
+  </ul>
+  <h2><a name="getNewsNewsId"></a>getNewsNewsId</h2>
+  <hr>
+  <p></p>
+  <p>Get a News article. See note on News model about possibly not needing News endpoints.</p>
+  <h3 class="section">URL</h3>
+  <code>https://virtserver.swaggerhub.com/browna525/NumbersSearch/1.0.0/news/{newsId}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="inline_response_200_6"><a href="">inline_response_200_6</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">newsId</span>
+      <span class="param-type">BigDecimal</span>
+      
+      <p class="param-description">The internal ID.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">fields</span>
+      <span class="param-type"></span>
+      
+      <p class="param-description">Return only certain model properties keyed by model type and specified by a comma-separated list of property names.</p>
+	  </li>
+  </ul>
+</div>

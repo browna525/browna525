@@ -1,0 +1,42 @@
+
+<h2>DrawGame</h2>
+<ul class="parameter">
+  <li class="param-required-true">id : String
+    <br/>The draw game ID (e.g. \&quot;powerball\&quot;).
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">name : String
+    <br/>The draw game name.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">results : OneOfDrawGameResults
+    <br/>Limited to the most recent applicable winning numbers. There may be multiple in the case of Pick games.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">nextJackpot : String
+    <br/>The next jackpot amount (e.g. \&quot;$20 Million\&quot;).
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">nextDrawDate : date
+    <br/>The next drawing date (e.g. \&quot;2021-12-31\&quot;).
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">expiringTickets : List
+    <br/>An array of unredeemed tickets that will expire soon.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">recentWinners : List
+    <br/>If part of the API, include the most recent winners.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">updatedAt : Date
+    <br/>The date and time this information was last updated.
+  </li>
+</ul>
